@@ -199,7 +199,7 @@ function map() {
             onAdd: function (map) {
                 let icon1 = ["Important Bird Areas"],
                     icon2 = ["National Park, Preserve, Forest, or Wildlife Refuge Boundary"],
-                    label1 = ["img/iba.png"],
+                    label1 = ["img/iba.PNG"],
                     label2 = ["img/boundary.png"];
 
                 // initial add
