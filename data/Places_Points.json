@@ -1,0 +1,14 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16058699.3171,10635258.601999998]},"properties":{"UNIT_NAME":"Arctic National Wildlife Refuge","LABELNAME":"ANWR"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17768497.6669,7890013.776100002]},"properties":{"UNIT_NAME":"Bristol Bay","LABELNAME":"Bristol Bay"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16523047.7,8516165.369599998]},"properties":{"UNIT_NAME":"Chugach National Forest","LABELNAME":"Chugach NF"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16815048.6327,9173674.8587]},"properties":{"UNIT_NAME":"Denali National Park and Preserve","LABELNAME":"Denali NP"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17061284.8277,10423053.586199999]},"properties":{"UNIT_NAME":"Gates of the Arctic National Park","LABELNAME":"Gates of the Arctic NP"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-18083475.0385,7432659.444200002]},"properties":{"UNIT_NAME":"Izembek National Wildlife Refuge","LABELNAME":"Izembek NWR"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17464713.1233,11009998.893799998]},"properties":{"UNIT_NAME":"National Petroleum Reserve - Alaska","LABELNAME":"NPR-A"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-14967035.976599999,7907525.723899998]},"properties":{"UNIT_NAME":"Tongass","LABELNAME":"Tongass"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-18173337.94,8701053.5973]},"properties":{"UNIT_NAME":"Yukon Delta National Wildlife Refuge","LABELNAME":"Yukon Delta NWR"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-19554146.7537,8020659.495700002]},"properties":{"UNIT_NAME":"Bering Sea","LABELNAME":"Bering Sea"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-19121523.5162,10873634.3592]},"properties":{"UNIT_NAME":"Chukchi Sea","LABELNAME":"Chukchi Sea"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16104853.3736,11540107.995399997]},"properties":{"UNIT_NAME":"Beaufort Sea","LABELNAME":"Beaufort Sea"}}
+]}

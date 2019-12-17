@@ -1,0 +1,13 @@
+latitude,longitude,altitude,geometry,id,chapter,zoom,alt,image,source-credit,source-link,description
+68.62492423,-144.2577504,,Point,1,1. Arctic National Wildlife Refuge,6,ANWR,img/northern_pintail.jpg,A Northern Pintail in the ANWR. Photo credit: Danny Brown,https://ak.audubon.org/conservation/arctic-national-wildlife-refuge,description
+57.63011225,-159.6171303,,Point,2,2. Bristol Bay,6,Bristol Bay,img/Bristol_Bay_shore.jpg,The Bristol Bay shore. Photo: Stan Shebs,https://ak.audubon.org/conservation/bristol-bay,description
+60.51882401,-148.4290629,,Point,3,3. Chugach National Forest,6,Chugach NF,img/chugach.jpg,Alpine Lakes in the Chugach. Photo: Erin McKittrick,https://www.fs.usda.gov/main/chugach/about-forest,description
+63.29791059,-151.0521519,,Point,4,4. Denali National Park and Preserve ,6,Denali NP,img/denali.jpg,"Denali, the tallest peak in North America. Photo: Albert Herring",https://www.nps.gov/dena/index.htm,description
+67.91928544,-153.2641293,,Point,5,5. Gates of the Arctic National Park and Preserve,6,Gates of the Arctic NP,img/gates.jpg,"Sunset in the Brooks Range. Photo: Carl Johnson, NPS",https://www.nps.gov/gaar/index.htm,description
+55.36310874,-162.4466202,,Point,6,6. Izembek National Wildlife Refuge,6,Izembek NWR,img/izembek.png,"Brant in Izembek NWR. Photo: Kristine Sowl, USFWS",https://ak.audubon.org/conservation/izembek-national-wildlife-refuge,description
+69.81881522,-156.8881873,,Point,7,7. National Petroleum Reserve - Alaska,6,NPR-A,img/npra.jpg,Snow Goose family at Teshekpuk Lake. Photo: Kiliii Yuyan,https://ak.audubon.org/conservation/national-petroleum-reserve-alaska,description
+57.71423708,-134.4511718,,Point,8,8. Tongass National Forest,6,Tongass NF,img/tongass.jpg,Young Spruce Grouse in the Tongass. Photo: Milo Burcham,https://ak.audubon.org/conservation/tongass-national-forest,description
+61.32595138,-163.2538723,,Point,9,9. Yukon Delta National Wildlife Refuge,6,Yukon Delta NWR,img/yukon.jpg,An Emperor Goose. Photo: Milo Burcham,https://www.fws.gov/refuge/Yukon_Delta/about.html,description
+58.253027,-175.657889,,Point,10,10. Bering Sea,6,Bering Sea,img/bering.png,Parakeet Auklet. Photo: Milo Burcham,https://ak.audubon.org/conservation/bering-sea,description
+69.3919433,-171.7715683,,Point,11,11. Chukchi Sea,6,Chukchi Sea,img/chukchi.jpg,A flock of King Eiders. Photo: Steven Kazlowski,https://ak.audubon.org/conservation/chukchi-sea,description
+71.39902476,-144.6723593,,Point,12,12. Beaufort Sea,6,Beaufort Sea,img/beaufort.img,Horned Puffin. Photo: Michael Cohen,https://ak.audubon.org/conservation/beaufort-sea,description

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Audubon Alaska</title>
+    <!-- Font Awesome 5 -->
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>    <!--bootstrap 4-->
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+    <!--leaflet-->
+    <link rel="stylesheet" href="lib/leaflet.css"/>
+    <!--search engine-->
+    <link rel="stylesheet" href="css/leaflet-search.css" />
+	 <!--extra markers-->
+    <link rel="stylesheet" href="lib/leaflet-storymap/markers/leaflet.extra-markers.min.css"/>
+    <!--leaflet easy button-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <!--my css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar/Help/Info -->
+<header>
+    <nav	class="navbar bg-custom-black navbar-dark navbar-expand-sm fixed-top" id="header1">
+        <div class="container-fluid p-1">
+            <div class="ml-auto mr-0">
+                <button class="customMenuButton1" data-toggle="modal" data-target="#helpModal" id="buttonHelp">
+                    <div class="text-center" data-toggle="tooltip" title="Open Help">
+                        <i class="fas fa-question-circle fa-2x"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Help Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="helpModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title font-weight-bold" >Help Menu</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pl-5 pr-5">
+
+                    <div class="pl-3 pr-4">
+                        <table class="table table-sm">
+                            <thead>
+                            <tr>
+                                <th scope="col">Control</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row"> <i class="ml-3 fas fa-search"></i> </th>
+                                <td>Use this tool to search Important Bird Areas by name.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <i class="ml-3 fas fa-sync-alt"></i> </th>
+                                <td>Use this button to reset the map to the initial view.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <i class="ml-3 fas fa-layer-group"></i> </th>
+                                <td>Use this menu to change basemaps and turn layers on and off.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+	
+<!-- MAIN -->
+<main role="main">
+
+    <!-- Splash Modal -->
+    <div class="modal fade" id="splashModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text" id="exampleModalLabel"><strong>Audubon Alaska: Where We Work</strong></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Audubon Alaska is a science-based conservation organization that works to protect birds, other wildlife, and their habitats across Alaska. We use science to identify conservation priorities and support conservation actions and policies, with an emphasis on public lands and waters, and through education we seek to raise public awareness about the natural ecosystems of Alaska. <br><br>This map showcases the major areas in which Audubon Alaska works: In <b>orange</b>, find the key landscapes - national parks, preserves, forests, wildlife refuges, and others. In <b>blue</b>, find Alaska's Important Bird Areas, generally recognized as some of the state's most valuable habitat for birds. 
+                </div>
+                <div class="modal-footer flex-column align-content-center">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Start Exploring</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAP PAGE -->
+    <div class="container-fluid fadeIn" id="mainContainer">
+        <div class="row" id="rowParent">
+            <div class="col-8 m-0 p-0">
+            <!-- MAP -->
+                <div class="container-fluid" id="map"></div>
+            </div>
+
+            <div class="col-4 pt-3 px-0" id="storyPanel">
+            <!-- STORY MAP -->
+                <div id="storyMapTitleBlock">
+                    <div class="flex-row text-center">
+                        <h4 class="font-weight-bold">Audubon Alaska: Where We Work</h4>
+                    </div>
+                    <div class="flex-row text-center">
+                        <small>Scroll <i class="fa fa-chevron-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="flex-row text-center" id="story">
+                    <div id="narration">
+                        <div id="contents">
+                            <div id="space-at-the-top" class="space-at-the-top"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- MAP PAGE -->
+	
+	
+</main>
+<!-- MAIN -->
+		
+<!-- FOOTER -->
+<footer class="navbar footer bg-custom-black navbar-expand-sm mb-0 fixed-bottom" id="footer">
+    <p class="navbar-nav ml-auto text-light font-weight-light" id="footerText"><small>© Tory Elmore | Audubon Alaska </small></p>
+</footer>
+<!-- FOOTER -->
+
+
+<!-- device size tester -->
+<div id="device-size-detector">
+    <div id="xs" class="d-block d-sm-none"></div>
+    <div id="sm" class="d-none d-sm-block d-md-none"></div>
+    <div id="md" class="d-none d-md-block d-lg-none"></div>
+    <div id="lg" class="d-none d-lg-block d-xl-none"></div>
+    <div id="xl" class="d-none d-xl-block"></div>
+</div>
+<!-- device size tester -->
+
+
+<!--Jquery-->
+<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+<!--bootstap 4 scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!-- material design bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+<!-- leaflet -->
+<script src="lib/leaflet.js"></script>
+<!-- leaflet search -->
+<script src="js/leaflet-search.js"></script>
+<!--leaflet easy button -->
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+<!--extra markers-->
+<script src="lib/leaflet-storymap/markers/leaflet.extra-markers.min.js"></script>
+<!--my scripts-->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
